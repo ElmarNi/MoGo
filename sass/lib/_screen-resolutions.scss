@@ -1,0 +1,23 @@
+@media (max-width: 575.98px){
+    #banner{
+        .head-row{
+            h2{
+                font-size: 78px;
+            }
+        }
+        .bottom-row{
+            a{
+                font-size: 12px;
+                word-spacing: 0;
+                span{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    #facts{
+        .item{
+            width: 25%;
+        }
+    }
+}

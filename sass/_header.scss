@@ -1,0 +1,58 @@
+header{
+    background-image: linear-gradient(to right bottom, $custom-orange, $custom-red, $custom-red);
+    box-shadow: 0px 0px 7px $custom-red;
+    position: sticky;
+    top: 0;
+    padding: 30px 0;
+    z-index: 5555;
+    .logo{
+        object-fit: contain;
+    }
+    .large-screens, .small-screens{  
+        ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            li{
+                margin-right: 40px;
+                a{
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: white;
+                    position: relative;
+                    transition: all .4s ease;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        left: 50%;
+                        width: 0;
+                        height: 2px;
+                        bottom: -5px;
+                        background: $custom-orange;
+                        transition: all .4s ease;
+                    }
+                    &:hover{
+                        color: $custom-orange;
+                        &::before{
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .small-screens{
+        .dropdown-menu{
+            transform: translate3d(-110px, 40px, 0px) !important;
+        }
+        ul{
+            display: block;
+            background-image: linear-gradient(to top right, $custom-red, $custom-red, $custom-orange);
+            li{
+                margin: 0 0 20px 20px;
+            }
+        }
+    }
+}

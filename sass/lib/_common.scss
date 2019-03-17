@@ -1,0 +1,88 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #999999
+}
+.main-btn{
+    border: 2px solid white;
+    background: none;
+    padding: 5px 30px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    position: relative;
+    a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+        position: relative;
+        z-index: 2;
+        transition: all .5s ease;
+    }
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: white;
+        transition: all .5s ease;
+        z-index: 1;
+    }
+    &::before{
+        right: 100%;
+        bottom: 100%;
+    }
+    &::after{
+        left: 100%;
+        top: 100%;
+    }
+    &:hover{
+        border-color: $custom-red;
+        a{
+            color: $custom-red;
+        }
+        &::before{
+            right: 50%;
+            bottom: 0;
+        }
+        &::after{
+            left: 50%;
+            top: 0;
+        }
+    }
+}
+/*heading contents*/
+.head-row{
+    h3{
+        text-transform: capitalize;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 24px;
+        color: black;
+    }
+    h2{
+        text-transform: uppercase;
+        margin: 0 auto;
+        font-size: 36px;
+        color: black;
+        font-weight: bold;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            background: $custom-red;
+            width: 60px;
+            bottom: -20px;
+        }
+    }
+    p{
+        margin-top: 40px;
+    }
+}
+.cs-img-fluid{
+    width: 100%;
+}

@@ -1,0 +1,81 @@
+#banner{
+    background-image: url("../img/bg.png");
+    background-position: 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    .head-row{
+        h3{
+        margin: 0 auto 30px;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 48px;
+        color: white;
+        }
+        h2{
+            text-transform: uppercase;
+            margin: 0 auto;
+            font-size: 98px;
+            color: white;
+            font-weight: bold;
+            line-height: 100px;
+            position: relative;
+            &::after{
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 2px;
+                background: white;
+                width: 60px;
+                bottom: -50px;
+            }
+        }
+    }
+    .bottom-row{
+        margin-top: 90px;
+        a{
+            padding: 15px 0;
+            word-spacing: 2px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #f7eac5;
+            font-size: 16px;
+            display: block;
+            position: relative;
+            transition: all .4s ease;
+            span{
+                font-size: 22px;
+                font-weight: bold;
+            }
+            &::before{
+                content: "";
+                background: #f7eac5;
+                position: absolute;
+                top: 5px;
+                height: 2px;
+                width: 100%;
+                transition: all .4s ease;
+            }
+            &::after{
+                content: "";
+                background: $custom-red;
+                position: absolute;
+                top: 5px;
+                height: 2px;
+                width: 0%;
+                left: 0;
+                transition: all .6s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+            }
+            &:hover{
+                color: white;
+                &::before{
+                    background: white;
+                }
+                &::after{
+                    width: 30%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+#facts{
+    background: $custom-blue;
+    .item{
+        text-align: center;
+        padding: 60px 0;
+        width: 20%;
+        border-left: 1px solid;
+        border-color: #b5eae0 !important;
+        overflow: hidden;
+        h1,p{
+            color: white;
+            text-transform: uppercase;
+            transition: all .4s ease;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 48px;
+        }
+        p{
+            margin: 0;
+        }
+        &:hover{
+            h1,p{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

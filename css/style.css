@@ -58,13 +58,14 @@ body {
 }
 
 /*heading contents*/
-.head-row h3 {
+h3 {
   text-transform: capitalize;
   font-family: 'Kaushan Script', cursive;
   font-size: 24px;
   color: black;
 }
-.head-row h2 {
+
+h2 {
   text-transform: uppercase;
   margin: 0 auto;
   font-size: 36px;
@@ -72,7 +73,7 @@ body {
   font-weight: bold;
   position: relative;
 }
-.head-row h2::after {
+h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -82,8 +83,14 @@ body {
   width: 60px;
   bottom: -20px;
 }
+
 .head-row p {
   margin-top: 40px;
+}
+
+h5 {
+  color: black;
+  font-weight: bold;
 }
 
 .cs-img-fluid {
@@ -329,10 +336,6 @@ header .small-screens ul li {
 #service .content .right {
   padding: 0 20px;
 }
-#service .content .right h5 {
-  color: black;
-  font-weight: bold;
-}
 #service .content .right p {
   margin: 0;
 }
@@ -358,6 +361,159 @@ header .small-screens ul li {
   position: absolute;
   bottom: -18%;
   right: 17%;
+}
+
+#service-2 {
+  padding: 100px 0 70px;
+}
+#service-2 .content-row .right-piece .bottom {
+  overflow-y: scroll;
+  height: 130px;
+}
+#service-2 .content-row .right-piece .bottom::-webkit-scrollbar {
+  width: 8px;
+}
+#service-2 .content-row .right-piece .bottom::-webkit-scrollbar-thumb {
+  background-color: #95e1d3;
+}
+#service-2 .content-row .right-piece .bottom::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+#quote {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+#quote .left-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+#quote .right-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+#quote .icon {
+  padding: 20px;
+  border: 2px solid #95e1d3;
+  margin-left: 70px;
+  margin-right: 50px;
+  max-height: 105px;
+}
+#quote p {
+  margin: 0 50px 0 0;
+}
+#quote h3 {
+  margin: 35px 0px 0px 50px;
+  position: relative;
+}
+#quote h3::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background: #f38181;
+}
+
+#team {
+  padding: 80px 0 50px;
+}
+#team .content {
+  /*hoverable class*/
+}
+#team .content .item {
+  position: relative;
+  /*blue lay*/
+  /*red to orange overlay style*/
+}
+#team .content .item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #95e1d3;
+}
+#team .content .item img {
+  position: relative;
+  z-index: 2;
+  transition: all .4s ease;
+}
+#team .content .item .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, #f38181, #fce38a);
+  z-index: 3;
+  text-align: center;
+  opacity: 0;
+  transition: all .4s ease;
+}
+#team .content .item .content-about {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .2s ease;
+  z-index: 5;
+  text-align: center;
+}
+#team .content .item .content-about .social-icons {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#team .content .item .content-about .social-icons li {
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #f38181;
+  background: #fce38a;
+  transition: all .4s ease;
+}
+#team .content .item .content-about .social-icons li:last-child {
+  border: none;
+}
+#team .content .item .content-about .social-icons li a {
+  text-decoration: none;
+  color: #f38181;
+  transition: all .4s ease;
+  padding: 10px;
+}
+#team .content .item .content-about .social-icons li:hover {
+  background: #f38181;
+}
+#team .content .item .content-about .social-icons li:hover a {
+  color: white;
+}
+#team .content .hover:hover img {
+  transform: translate(-10px, -10px);
+}
+#team .content .hover:hover .overlay {
+  transform: translate(-10px, -10px);
+  opacity: 0.7;
+}
+#team .content .hover:hover .content-about {
+  opacity: 1;
+  transform: translate(-55%, -55%);
+  transition: all .4s ease;
+}
+#team .content h5, #team .content p {
+  text-align: center;
 }
 
 @media (max-width: 575.98px) {

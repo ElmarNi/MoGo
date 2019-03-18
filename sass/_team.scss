@@ -1,0 +1,98 @@
+#team{
+    padding: 80px 0 50px;
+    .content{
+        .item{
+            position: relative;
+            /*blue lay*/
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: $custom-blue;
+            }
+            img{
+                position: relative;
+                z-index: 2;
+                transition: all .4s ease;
+            }
+            /*red to orange overlay style*/
+            .overlay{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-image: linear-gradient(to top, $custom-red, $custom-orange);
+                z-index: 3;
+                text-align: center;
+                opacity: 0;
+                transition: all .4s ease;
+            }
+            .content-about{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                opacity: 0;
+                transition: all .2s ease;
+                z-index: 5;
+                text-align: center;
+                .social-icons{
+                    display: flex;
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        font-size: 20px;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-right: 1px solid $custom-red;
+                        background: $custom-orange;
+                        transition:all .4s ease;
+                        &:last-child{
+                            border: none;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $custom-red;
+                            transition:all .4s ease;
+                            padding: 10px;
+                        }
+                        &:hover{
+                            background: $custom-red;
+                            a{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /*hoverable class*/
+        .hover{
+            &:hover{
+                img{
+                    transform: translate(-10px,-10px);
+                }
+                .overlay{
+                    transform: translate(-10px, -10px);
+                    opacity: 0.7;
+                }
+                .content-about{
+                    opacity: 1;
+                    transform: translate(-55%,-55%);
+                    transition: all .4s ease;
+                }
+            }
+        }
+        h5,p{
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+#work{
+    padding: 80px 0;
+    .content-row{
+        .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(to top, $custom-red, $custom-orange);
+            transition: all .4s ease;
+            opacity: 0;
+        }
+        .icon{
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            width: 100%;
+            transition: all .4s ease;
+            opacity: 0;
+        }
+        .hover{
+            &:hover{
+                .overlay{
+                    opacity: 0.8;
+                }
+                .icon{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -380,47 +380,6 @@ header .small-screens ul li {
   background-color: #f5f5f5;
 }
 
-#quote {
-  background: #f8f8f8;
-  padding: 60px 0;
-}
-#quote .left-arrow {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(-90deg);
-}
-#quote .right-arrow {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%) rotate(90deg);
-}
-#quote .icon {
-  padding: 20px;
-  border: 2px solid #95e1d3;
-  margin-left: 70px;
-  margin-right: 50px;
-  max-height: 105px;
-}
-#quote p {
-  margin: 0 50px 0 0;
-}
-#quote h3 {
-  margin: 35px 0px 0px 50px;
-  position: relative;
-}
-#quote h3::before {
-  content: "";
-  position: absolute;
-  left: -50px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 2px;
-  background: #f38181;
-}
-
 #team {
   padding: 80px 0 50px;
 }
@@ -514,6 +473,88 @@ header .small-screens ul li {
 }
 #team .content h5, #team .content p {
   text-align: center;
+}
+
+#logos {
+  background: #f8f8f8;
+  padding: 50px 0;
+}
+
+#work {
+  padding: 80px 0;
+}
+#work .content-row .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to top, #f38181, #fce38a);
+  transition: all .4s ease;
+  opacity: 0;
+}
+#work .content-row .icon {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+  transition: all .4s ease;
+  opacity: 0;
+}
+#work .content-row .hover:hover .overlay {
+  opacity: 0.8;
+}
+#work .content-row .hover:hover .icon {
+  opacity: 1;
+}
+
+#testimonials, #quote {
+  background: #f8f8f8;
+  padding: 60px 0;
+}
+#testimonials .left-arrow, #quote .left-arrow {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+#testimonials .right-arrow, #quote .right-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+#testimonials .icon, #quote .icon {
+  margin-left: 70px;
+  margin-right: 50px;
+  max-height: 105px;
+  border-radius: 100%;
+}
+#testimonials p, #quote p {
+  margin: 0 50px 0 0;
+}
+#testimonials h3, #quote h3 {
+  margin: 35px 0px 0px 50px;
+  position: relative;
+}
+#testimonials h3::before, #quote h3::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 2px;
+  background: #f38181;
+}
+
+#quote .icon {
+  padding: 20px;
+  border: 2px solid #95e1d3;
+  border-radius: 0;
 }
 
 @media (max-width: 575.98px) {

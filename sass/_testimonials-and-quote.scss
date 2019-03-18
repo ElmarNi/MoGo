@@ -1,4 +1,4 @@
-#quote{
+#testimonials, #quote{
     background: #f8f8f8;
     padding: 60px 0;
     .left-arrow{
@@ -14,11 +14,10 @@
         transform: translateY(-50%) rotate(90deg);
     }
     .icon{
-        padding: 20px;
-        border: 2px solid $custom-blue;
         margin-left: 70px;
         margin-right: 50px;
         max-height: 105px;
+        border-radius: 100%;
     }
     p{
         margin: 0 50px 0 0;
@@ -36,5 +35,12 @@
             height: 2px;
             background: #f38181;
         }
+    }
+}
+#quote{
+    .icon{
+        padding: 20px;
+        border: 2px solid $custom-blue;
+        border-radius: 0;
     }
 }

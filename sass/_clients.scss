@@ -1,0 +1,26 @@
+#clients{
+    padding: 80px 0;
+    background-image: url("../img/clients-bg.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content-row{
+        h6{
+            text-transform: capitalize;
+            font-style: italic;
+            color: #333333;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                height: 3px;
+                background: #f38181;
+                width: 60px;
+                bottom: -23px;
+            }
+        }
+        p{
+            margin: 40px 0 0 0;
+        }
+    }
+}

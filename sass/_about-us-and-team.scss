@@ -1,5 +1,5 @@
-#team{
-    padding: 80px 0 50px;
+#about-us, #team{
+    padding: 80px 0;
     .content{
         .item{
             position: relative;
@@ -40,42 +40,7 @@
                 transition: all .2s ease;
                 z-index: 5;
                 text-align: center;
-                .social-icons{
-                    display: flex;
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                    li{
-                        font-size: 20px;
-                        width: 50px;
-                        height: 50px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        border-right: 1px solid $custom-red;
-                        background: $custom-orange;
-                        transition:all .4s ease;
-                        &:last-child{
-                            border: none;
-                        }
-                        a{
-                            text-decoration: none;
-                            color: $custom-red;
-                            transition:all .4s ease;
-                            padding: 10px;
-                        }
-                        &:hover{
-                            background: $custom-red;
-                            a{
-                                color: white;
-                            }
-                        }
-                    }
-                }
             }
-        }
-        /*hoverable class*/
-        .hover{
             &:hover{
                 img{
                     transform: translate(-10px,-10px);
@@ -91,8 +56,55 @@
                 }
             }
         }
-        h5,p{
-            text-align: center;
+    }
+}
+#about-us{
+    .content{
+        i,p{
+            color: white;
+            text-transform: uppercase;
+            font-size: 18px;
+            font-weight: bold;
         }
+    }
+
+}
+#team{
+    .content-about{
+        .social-icons{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                font-size: 20px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-right: 1px solid $custom-red;
+                background: $custom-orange;
+                transition:all .4s ease;
+                &:last-child{
+                    border: none;
+                }
+                a{
+                    text-decoration: none;
+                    transition:all .4s ease;
+                    padding: 10px;
+                    color: $custom-red;
+                }
+                &:hover{
+                    background: $custom-red;
+                    a{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    h5,p{
+        text-align: center;
     }
 }

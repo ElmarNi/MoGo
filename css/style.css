@@ -581,6 +581,90 @@ header .small-screens ul li {
   color: #95e1d3;
 }
 
+footer {
+  padding: 80px 0;
+  background: #f8f8f8;
+}
+footer .first-row .top {
+  position: relative;
+}
+footer .first-row .top::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -10px;
+  background: #ccc;
+  height: 1px;
+  bottom: -15px;
+}
+footer .first-row .top h2 {
+  text-transform: none;
+  color: #ccc;
+}
+footer .first-row .top h2::after {
+  visibility: hidden;
+}
+footer .first-row .top p {
+  margin: 20px -10px 30px 0;
+}
+footer .first-row .top h6 {
+  font-size: 14px;
+  color: black;
+}
+footer .first-row .top h6 span {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 5px;
+}
+footer .first-row .middle {
+  margin-top: 27px;
+}
+footer .first-row .middle ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+footer .first-row .middle ul li {
+  margin-right: 5px;
+}
+footer .first-row .middle ul li P {
+  margin: 0;
+}
+footer .first-row .middle ul li a {
+  text-decoration: none;
+  color: #95e1d3;
+  padding: 7px;
+  transition: all .4s ease;
+  margin-top: 27px;
+}
+footer .first-row .middle ul li a:hover {
+  color: #fce38a;
+}
+footer .first-row .bottom {
+  margin-top: 40px;
+}
+footer .first-row .bottom input {
+  padding: 10px;
+  width: 280px;
+  outline-color: #95e1d3;
+  border: 1px solid #ccc;
+}
+footer .first-row .bottom input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+footer .first-row .bottom button {
+  margin: 0 0 0 -5px;
+  border-color: #95e1d3;
+  background: #95e1d3;
+  padding: 9px 30px;
+}
+footer .first-row .bottom button:hover {
+  border-color: #f38181;
+}
+
 @media (max-width: 575.98px) {
   #banner .head-row h2 {
     font-size: 78px;
